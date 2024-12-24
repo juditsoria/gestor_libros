@@ -33,6 +33,19 @@ def crear():
     db.session.commit()
     return redirect(url_for("deseos"))
 
+@app.route("/libro-leido/<id>")
+def leido(id):
+    libro = db.session.query(LibrosPendientes).filter(LibrosPendientes.id == int(id)).first()
+    libro.leido = not(libro.leido)
+    db.session.commit()
+    return redirect(url_for("deseos"))
+
+@app.route("/eliminar-libro/<id>")
+def eliminar(id):
+    libro = db.session.query(LibrosPendientes).filter(LibrosPendientes.id == int(id)).delete()
+    db.session.commit()
+    return redirect(url_for("deseos"))
+
 
 if __name__ == "__main__":
     # Crea todas las tablas si no existen

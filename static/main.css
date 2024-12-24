@@ -14,4 +14,8 @@ body{
  .scrollable-list {
             max-height: 100vh;
             overflow-y: auto;
-        }
+ }
+ .libro_leido{
+ text-decoration: line-through;
+ color: #cfcfcf
+ }
