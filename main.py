@@ -46,6 +46,18 @@ def eliminar(id):
     db.session.commit()
     return redirect(url_for("deseos"))
 
+@app.route("/editar-libro/<id>", methods=["GET", "POST"])
+def editar(id):
+    libro = db.session.query(LibrosPendientes).filter(LibrosPendientes.id == int(id)).first()
+    if request.method == "POST":
+        libro.titulo = request.form["titulo"]
+        libro.autor = request.form["autor"]
+        libro.leido = "leido" in request.form
+        db.session.commit()
+        return redirect(url_for("deseos"))
+    return render_template("editarLibro.html", libro=libro)
+
+
 
 if __name__ == "__main__":
     # Crea todas las tablas si no existen
