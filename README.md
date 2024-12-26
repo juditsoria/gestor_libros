@@ -13,8 +13,8 @@ SQLite: Base de datos utilizada para almacenar la información de los libros.
 SQLAlchemy: ORM (Object-Relational Mapper) utilizado para facilitar la interacción con la base de datos.
 Bootstrap: Framework de CSS utilizado para el diseño y la interfaz de usuario, en particular el tema Sketchy.
 HTML/CSS: Lenguajes utilizados para la estructura y el diseño de las páginas web.
+
 Estructura del Proyecto
-bash
 Copiar código
 /gestor-libros
 │
@@ -62,7 +62,18 @@ Capturas de Pantalla
 A continuación se muestran algunas capturas de pantalla de la aplicación en funcionamiento:
 
 Pantalla de inicio: Formulario para agregar un libro.
+![Captura de pantalla 2024-12-24 183818](https://github.com/user-attachments/assets/7f1c9a3b-a720-4996-9a73-11ea2ec2c0f1)
 Pantalla de libros pendientes: Lista de libros con opciones para editar o eliminar.
+![Captura de pantalla 2024-12-24 185347](https://github.com/user-attachments/assets/259e8906-75ba-4b59-85bf-a6dc3e35bb04)
+Marcar un libro como leído o eliminarlo de la lista.
+![Captura de pantalla 2024-12-24 185915](https://github.com/user-attachments/assets/0e59edf2-c3fd-4173-8b46-ef87628802fe)
 Formulario de edición: Página para modificar los detalles de un libro.
+![Captura de pantalla 2024-12-24 190525](https://github.com/user-attachments/assets/d43a090b-813b-4837-876b-fd10cd305ba8)
+
+
+
+
+
+
 Contribuciones
 Si deseas contribuir a este proyecto, puedes hacerlo mediante un fork del repositorio y enviando un pull request con tus cambios.
